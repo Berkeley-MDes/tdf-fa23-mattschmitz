@@ -18,6 +18,8 @@ In both of these cases, it's easy to upload the image. What I don't like, is tha
 Alternatively, I can upload the image manually, then reference it:
 
 ![making a little toy in rhino](../2028_08-31_assets/Screenshot 2023-08-31 at 2.32.27 PM.png)
+Oops! I used the wrong relative path. Lets try this: 
+![making a little toy in rhino](/2028_08-31_assets/Screenshot 2023-08-31 at 2.32.27 PM.png)
 
 But that's a lot more work for each image, especially screengrabs, as I have to save them to my computer, then upload them, then copy the file name and reference the min markdown. Plus, if I reorganize my assets at any point I'll need re-reference them in markdown, and github only lets you edit image filenames from the command line. 
 
