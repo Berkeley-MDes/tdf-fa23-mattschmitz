@@ -12,6 +12,9 @@ Speculations
 I think that CAD is going to be increasingly "intelligent". It's a complicated space, but much like mid-journey/Dall-E exist for image generation, and figma is starting to use AI design assist, there's no reason this can't be extended into 3D space. I've heard about but haven't played with generative design (I know solidworks now has plugins for this) where you specify a connection and the stresses you want it to be capable of withstanding and the software autogenerates a handful of different solutions that it thinks will work. You can then pick and refine. I also think that aesthetics can be learned as well; there's no reason that AI can't create interesting aesthetics as well as humans. It's still a ways out before it's the norm - 10-20 years I would guess, simply because it's a complex problem space, and humans remain _really smart_. 
 
 Images & Video
+![making a little toy in rhino](../2028_08-31_assets/rhino_practic_1.jpg)
+
+
 <img width="1440" alt="image" src="https://github.com/Berkeley-MDes/tdf-fa23-mattschmitz/assets/23087383/1f09a39f-8fb9-4f96-bc5e-0d7eaa641361">
 
 
