@@ -6,16 +6,22 @@ It's been a rough first week! I haven't been in school for 9 years, so it's been
 
 Getting back to using github is fun. I like Github, I like Markdown. I never got particularly good with markdown but I know many folks who use it as their primary note-taking means. One thing that is a little annoying is adding images into markdown. The easiest way by far is to copy paste. This screenshot, for example, I simply coppied & pasted here: 
 
-![image](https://github.com/Berkeley-MDes/tdf-fa23-mattschmitz/assets/23087383/d32814d8-8818-4b53-86c4-8afa990606b0)
+(this is a screenshot of a litle car I modeled while learning Rhino)
+
+![little rhino car](https://github.com/Berkeley-MDes/tdf-fa23-mattschmitz/assets/23087383/d32814d8-8818-4b53-86c4-8afa990606b0)
 
 Interestingly, if I past it _directly_ from the screengrab, it uploads as an html style img instead (not sure why)
-<img width="1396" alt="image" src="https://github.com/Berkeley-MDes/tdf-fa23-mattschmitz/assets/23087383/7625467f-caab-4ae4-9ccc-a3d2e6a7bbcd">
+<img width="1396" alt="little rhino car" src="https://github.com/Berkeley-MDes/tdf-fa23-mattschmitz/assets/23087383/7625467f-caab-4ae4-9ccc-a3d2e6a7bbcd">
 
 The part I don't love about this, however, is that githup uploads the image to an "assets" folder which is not viewable in the github web GUI (not quite sure why), and I'm not able to change the filename after the fact.
 
 Alternatively, I can upload the image myself, like so:
-![making a little toy in rhino](../2028_08-31_assets/rhino_practic_1.jpg)
-but 
+
+![making a little toy in rhino](../2028_08-31_assets/Screenshot 2023-08-31 at 2.32.27 PM.png)
+
+but that requires me to manually upload it, then copy the filename and reference it. Also, if I reorganize my assets at any point I'll need re-reference them in markdown. Also, github only lets you edit image filenames from the command line.
+
+I think I will stick to option 1 or 2, as they seem the most straightforward.
 
 Rhino has been more difficult than I anticipated. I used to do a lot of 3d modeling in Solidworks, but that was 7 years ago. I've recently tinkered in onshape but it has similar UI to solidworks and the interface is desigend to be easy to learn for new-commers (because it's a newer software, they're working hard to pull people off of these very sticky products, I think). I know all the _concepts_ of CAD modeling, but learning where the tools exist has taken some time. Also, working on a 13" MBP is challenging - I have a large monitor at home but have mostly been working on campus in between classes. Maybe I can store one in jacobs descreteley? 🤔 Another challenge is the instructional videos are oriented towards windows users. This is not so bad when you're trying to learn concepts, but when you're trying to get up and running quickly the layout of tools is important.
 
