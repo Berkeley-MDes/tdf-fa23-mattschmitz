@@ -1,4 +1,28 @@
 
+
+# Report 2 - Week of 09/04/2023 #
+## Reflections
+I've made some progress getting my feet under me. Have a better grasp of grashopper as an interface; it seems like it's really a visual programming tool, sort of like and old school turing machine. Having worked as a software engineer for a while this makes sense to me (thought it's a little frustrating, as I really want it to have the full capabilities of a programming interface - for example, the ability to set environment variables would be incredibly helpful. I've heard that you can write python scripts to interopt with grashopper so perhaps that will be a challenge for next week.
+
+I've also got trained on the Tormach CNC mill, hopefully something useful. Despite being a simple machine in principle (spinning bit, moves in 3 axis) it has a number of nuances and complications to be aware of. For example, there are 3 different types of tools/tool holders: from left to right: chucks (for drill bits), set screw tool holder for HSS (high speed steel) mills, and collet nuts (for carbide, smooth shank mills).
+
+<img width="300" alt="tool holders for Tormach" src="https://github.com/Berkeley-MDes/tdf-fa23-mattschmitz/assets/23087383/9dc45e9d-ec78-4d3a-9411-31c528174fd5">
+
+I also got a lesson in drawing this week, learning about single point and multipoint projection. I'm super excited to get better at this - honestly, having worked in industry some and talked to older designers & engineers, being able to quickly sketch your ideas is increadibly useful. 
+
+<img width="500" alt="single point perspective" src="https://github.com/Berkeley-MDes/tdf-fa23-mattschmitz/assets/23087383/74e139cf-4d5c-40ba-9535-0a332b85f1a0">
+<img width="500" alt="circles spheres and elipses" src="https://github.com/Berkeley-MDes/tdf-fa23-mattschmitz/assets/23087383/0edad189-7f47-457a-8da5-508312ed8201">
+<img width="500" alt="trying out some real world objects" src="https://github.com/Berkeley-MDes/tdf-fa23-mattschmitz/assets/23087383/a147b583-1774-4a57-a62d-693269591701">
+
+I also got an esp32 and got it flashed and connected to WIFI! It uses micropython and this funny IDE called Thonny
+<img width="500" alt="esp32 wifi script" src="https://github.com/Berkeley-MDes/tdf-fa23-mattschmitz/assets/23087383/073e03ae-ce61-49a6-a0ec-108836a67a63">
+(don't worry, i didn't actually set my password to PASSWORD).
+
+## Speculations
+I'm glad to have front loaded some of the shop-trainings; I think I will thank myself in the future. I still want to complete the industrial sewing machine training as I think soft good often get overlooked by technology focused designers (which means they are ripe for innovation!). I need to make more progress on rhino and grasshopper. 
+
+I'm not sure I buy the whole "everything will be customizable just to you" future of manufacturing. The reality is many things, we don't want customized, and aren't willing to pay 50 cents more to have it so. And while 3d printing etc get's easier and easier, so to does injection molding and mass manufacturing - these are not "static" technologies. One area where customization could be incredibly useful is in the medical field. Orthotics NEED to be customised. With the advent of better cameras in phones, it's not inconcevable in the future that people could scan their own body parts (i.e. a foot missing a toe) and get orthotics mailed to them. I met a PhD INFO student with a background in biosensors (who I may work with on a project, TBD). Hope to learn from him and others like him while at Berkeley.
+
 # Report 1 - Week of 08/28/2023 #
 ## Reflections
 It's been a rough first week! I haven't been in school for 9 years, so it's been quite an adjustment. The information fire-house is real, as is learning how Berkeley works; how to shop for classes, get around, get exercise (pro tip: don't go to the gym after 5pm - berkeley has 1 gym for all undergrads & grad students and the line was around the block).
