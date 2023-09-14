@@ -19,11 +19,13 @@ Above, scooter with lock, a.k.a. crotch hazard
 So I wanted to make a holder for the lock that would hold it tangential to the scooter’s stem, like so:
 
 I sketched out some ideas:
+
 <img width="400" alt="image" src="https://github.com/Berkeley-MDes/tdf-fa23-mattschmitz/assets/23087383/2713ed3d-6f42-463f-9ffb-dfcba1209997">
 
 <img width="400" alt="image" src="https://github.com/Berkeley-MDes/tdf-fa23-mattschmitz/assets/23087383/45e4f551-6946-4f2d-bd56-ab2d47d36e27">
 
 I also looked up bike light holders, to see what current attachment mechanisms exist and are common. 
+
 <img width="1529" alt="image" src="https://github.com/Berkeley-MDes/tdf-fa23-mattschmitz/assets/23087383/59d03d40-3e5b-4853-8e67-d4ab05706f51">
 
 I ended up deciding to use a mechanism with a bracket and a rubber strap that hooks onto either side of the bracket and wraps around the stem.
@@ -40,7 +42,7 @@ Finally I have a 3d model in grasshopper, where I can manipulate a couple variab
 I can’t imagine that designing a simple part like this (and making it “parametric” in a fashion) is the best use of grasshopper. I know architects love rhino and those architects into computational design love grasshopper - and I’ve seen some pretty cool things created with it. But for something like this, a parametric modeler like solidworks or onshape would have been a thousand times simpler - simply sketch the geometry, pull out some of the sketch values as variables via an API (cody said solidworks has something like this) and boom everything regenerates. Even for a very simple part like this, the grasshopper file is massive and unwieldy. I haven’t even added basic finishing touches like fillets, or non-right angles. And yet more than once I found myself going cross-eyed trying to find a particular feature. 
 
 <img width="1000" alt="image" src="https://github.com/Berkeley-MDes/tdf-fa23-mattschmitz/assets/23087383/be05626e-6be2-493c-9269-08b1550d0e9e">
-My full grasshopper file
+above, My full grasshopper file
 
 I’m excited to do more complex things in grasshopper - I can see how it would be useful for patterning and manipulating larger datasets (matrices of points, generating patterns or organic shapes). This would all be very hard in a parametric modeler. I’m also excited to try some of it’s scripting tools.
 
