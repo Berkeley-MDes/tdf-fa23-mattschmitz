@@ -4,8 +4,8 @@ I’ve finally gotten the hang of Rhino and grasshopper. I started going through
 
 I built a couple small things to test my knowledge.
 
-<img width="400" alt="image" src="https://github.com/Berkeley-MDes/tdf-fa23-mattschmitz/assets/23087383/2695a21b-9d8d-47d0-bad7-7d0e8f44abc9">
-<img width="400" alt="image" src="https://github.com/Berkeley-MDes/tdf-fa23-mattschmitz/assets/23087383/6a2341e4-0313-4f99-9a2c-187c520eebaf">
+<img width="250" alt="image" src="https://github.com/Berkeley-MDes/tdf-fa23-mattschmitz/assets/23087383/2695a21b-9d8d-47d0-bad7-7d0e8f44abc9">
+<img width="250" alt="image" src="https://github.com/Berkeley-MDes/tdf-fa23-mattschmitz/assets/23087383/6a2341e4-0313-4f99-9a2c-187c520eebaf">
 
 I also found it incredibly helpful to work alongside Cody Glen, one of the design specialists at Jacobs, who could help with the annoying little things that google or chatGPT have a hard time answering e..g (how do you do push-pull manipulate a surface in 3d after you’ve created it from a sketch? - turns out the keyword I was missing in my search was “control points”). 
 
@@ -14,29 +14,33 @@ For learning grasshopper, the [grasshopper primer](https://github.com/modelab/gr
 To combine Rhino grasshopper in a fun and useful way, I went about creating a bike lock holder for my electric scooter. I got an electric scooter to get to classes (unfortunatlye, I have a pinched nerve in my back that gets aggravated biking up-hill, and berkeley is, well, on a hill). I also got a U-lock for my scooter, but unfortunately, the lock holder it came with doesn’t work as well for a scooter as for a bike - the primary problem is that it holds the lock on one side, so that it sticks away from the the frame. This means it’s either poking me in the crotch (current setup) or sticking out awkwardly in front, making it difficult to cary the scooter when folded
 
 <img width="500" alt="image" src="https://github.com/Berkeley-MDes/tdf-fa23-mattschmitz/assets/23087383/4c2a6c70-094b-4148-bb05-ccfae0f17151"> 
+
 Above, scooter with lock, a.k.a. crotch hazard
 
 So I wanted to make a holder for the lock that would hold it tangential to the scooter’s stem, like so:
 
 I sketched out some ideas:
 
-<img width="400" alt="image" src="https://github.com/Berkeley-MDes/tdf-fa23-mattschmitz/assets/23087383/2713ed3d-6f42-463f-9ffb-dfcba1209997">
+<img width="250" alt="image" src="https://github.com/Berkeley-MDes/tdf-fa23-mattschmitz/assets/23087383/2713ed3d-6f42-463f-9ffb-dfcba1209997">
 
-<img width="400" alt="image" src="https://github.com/Berkeley-MDes/tdf-fa23-mattschmitz/assets/23087383/45e4f551-6946-4f2d-bd56-ab2d47d36e27">
+<img width="250" alt="image" src="https://github.com/Berkeley-MDes/tdf-fa23-mattschmitz/assets/23087383/45e4f551-6946-4f2d-bd56-ab2d47d36e27">
 
 I also looked up bike light holders, to see what current attachment mechanisms exist and are common. 
 
-<img width="1529" alt="image" src="https://github.com/Berkeley-MDes/tdf-fa23-mattschmitz/assets/23087383/59d03d40-3e5b-4853-8e67-d4ab05706f51">
+<img width="500" alt="image" src="https://github.com/Berkeley-MDes/tdf-fa23-mattschmitz/assets/23087383/59d03d40-3e5b-4853-8e67-d4ab05706f51">
 
 I ended up deciding to use a mechanism with a bracket and a rubber strap that hooks onto either side of the bracket and wraps around the stem.
 
 And set about modeling the simplest version of the bracket in Rhino as possible. 
 
-<img width="410" alt="image" src="https://github.com/Berkeley-MDes/tdf-fa23-mattschmitz/assets/23087383/7d257bee-5934-4c53-bf98-f2d9616f8178">
+<img width="500" alt="image" src="https://github.com/Berkeley-MDes/tdf-fa23-mattschmitz/assets/23087383/7d257bee-5934-4c53-bf98-f2d9616f8178">
 
 Then I went to create this geometry in Grashopper. This is where 💩🥊🪭. Every line I had so casually drawn in Rhino became a painstaking series of commands in Grasshopper. Grasshopper repeatedly failed to do simple things (like caping a hollow surface) for reasons neither I nor Cody could exactly ascertain, so in some instances I had to come up with totally different modeling techniques.
 
 Finally I have a 3d model in grasshopper, where I can manipulate a couple variables (like the stem thickness and the bracket height) to modify it as needed. Next step - to print!
+
+<img width="500" alt="image" src="https://github.com/Berkeley-MDes/tdf-fa23-mattschmitz/assets/23087383/9a50c05f-53f5-4543-9b36-6c37c93afe58">
+
 
 ## Speculations:
 I can’t imagine that designing a simple part like this (and making it “parametric” in a fashion) is the best use of grasshopper. I know architects love rhino and those architects into computational design love grasshopper - and I’ve seen some pretty cool things created with it. But for something like this, a parametric modeler like solidworks or onshape would have been a thousand times simpler - simply sketch the geometry, pull out some of the sketch values as variables via an API (cody said solidworks has something like this) and boom everything regenerates. Even for a very simple part like this, the grasshopper file is massive and unwieldy. I haven’t even added basic finishing touches like fillets, or non-right angles. And yet more than once I found myself going cross-eyed trying to find a particular feature. 
