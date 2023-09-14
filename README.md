@@ -15,7 +15,7 @@ To combine Rhino grasshopper in a fun and useful way, I went about creating a bi
 
 <img width="500" alt="image" src="https://github.com/Berkeley-MDes/tdf-fa23-mattschmitz/assets/23087383/4c2a6c70-094b-4148-bb05-ccfae0f17151"> 
 
-Above, scooter with lock, a.k.a. crotch hazard
+\n Above, scooter with lock, a.k.a. crotch hazard
 
 So I wanted to make a holder for the lock that would hold it tangential to the scooter’s stem, like so:
 
