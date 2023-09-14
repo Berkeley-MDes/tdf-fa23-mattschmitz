@@ -13,7 +13,8 @@ For learning grasshopper, the [grasshopper primer](https://github.com/modelab/gr
 
 To combine Rhino grasshopper in a fun and useful way, I went about creating a bike lock holder for my electric scooter. I got an electric scooter to get to classes (unfortunatlye, I have a pinched nerve in my back that gets aggravated biking up-hill, and berkeley is, well, on a hill). I also got a U-lock for my scooter, but unfortunately, the lock holder it came with doesn’t work as well for a scooter as for a bike - the primary problem is that it holds the lock on one side, so that it sticks away from the the frame. This means it’s either poking me in the crotch (current setup) or sticking out awkwardly in front, making it difficult to cary the scooter when folded
 
-<img width="500" alt="image" src="https://github.com/Berkeley-MDes/tdf-fa23-mattschmitz/assets/23087383/4c2a6c70-094b-4148-bb05-ccfae0f17151"> scooter with lock, aka crotch hazard
+<img width="500" alt="image" src="https://github.com/Berkeley-MDes/tdf-fa23-mattschmitz/assets/23087383/4c2a6c70-094b-4148-bb05-ccfae0f17151"> 
+Above, scooter with lock, a.k.a. crotch hazard
 
 So I wanted to make a holder for the lock that would hold it tangential to the scooter’s stem, like so:
 
