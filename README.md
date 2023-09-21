@@ -2,15 +2,17 @@
 
 ## Reflections
 
-Finally got my project 1 done! I was very proud of 3d printing something for the first time.
+Finally got my project 1 done! I was very proud of 3d printing something for the first time, tada!:
+
 <img width="558" alt="image" src="https://github.com/Berkeley-MDes/tdf-fa23-mattschmitz/assets/23087383/93f0bdc7-be85-421d-bf6b-1bc026a7b908">
+
 My first print attempt was uncessessful, because the extruder for the breakaway was clogged. I dediced to reprint using the same print head for the part and the breakaway. You'll notice in the above photo that I oriented the part with the arch inverted - The reason for this was because I wasn't sure how precise the printer was at a normal speed/resolution setting, and I knew that the arch portion of my print needed to be pretty precise to fit onto the bar of the u-lock. So I opted for a less efficient print shape in order to ensure a good surface finish where it counted. However, it seems that the printer is more accurate than I anticipated, and this wasn't necessary - even going at a normal speed (not fine) I was impressed with the print quality. 
 
-In other news, we got our photo2 kits! Very excited to get started with it - I am using an esp32 for another class and it is a royal pain, but also fun :)
+In other news, we got our photo2 kits! Very excited to get started with it - I am using an esp32 for another class and it is a royal pain, but also fun :) I do not love the super low level coding - I am familiar with high level languages like javascript, ruby, scala but not as much with micropython. 
 
 # Speculations
 The impact of 3D printing on the ability to quickly prototype parts is hard to underestimate. If I were working 20 years ago and wanted to prototype this part, I'm not sure what I would do - I would have to machine it. 
-The bigest limit to 3d printing today is materials - it's still mostly limited to plastics, unless you have a lot of $$. There are environmental consequences to this as well - wood, clay, other materials that are (often) more ecofriendly don't lend themselves to printing. I think the next breakthrough in rapid prototyping will be in materials. 
+The bigest limit to 3d printing today is materials - it's still mostly limited to plastics, unless you have a lot of $$. There are environmental consequences to this as well - wood, clay, other materials that are (often) more ecofriendly don't lend themselves to printing. I think the next breakthrough in rapid prototyping will be in materials. What if you could 3d print wood, or a material entirely naturally derived? The types of products people can prototype affects the types of products they produce - people use plastic not JUST because it is cheap and light but also because it is accessible - how many people have a metal shop at home, or the ability to quickly machine complex metal parts?
 
 # Report 3 - week of 9/11/2023
 ## Reflections
