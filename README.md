@@ -1,3 +1,17 @@
+# Report 4 - week of 9/21/2023
+
+## Reflections
+
+Finally got my project 1 done! I was very proud of 3d printing something for the first time.
+<img width="558" alt="image" src="https://github.com/Berkeley-MDes/tdf-fa23-mattschmitz/assets/23087383/93f0bdc7-be85-421d-bf6b-1bc026a7b908">
+My first print attempt was uncessessful, because the extruder for the breakaway was clogged. I dediced to reprint using the same print head for the part and the breakaway. You'll notice in the above photo that I oriented the part with the arch inverted - The reason for this was because I wasn't sure how precise the printer was at a normal speed/resolution setting, and I knew that the arch portion of my print needed to be pretty precise to fit onto the bar of the u-lock. So I opted for a less efficient print shape in order to ensure a good surface finish where it counted. However, it seems that the printer is more accurate than I anticipated, and this wasn't necessary - even going at a normal speed (not fine) I was impressed with the print quality. 
+
+In other news, we got our photo2 kits! Very excited to get started with it - I am using an esp32 for another class and it is a royal pain, but also fun :)
+
+# Speculations
+The impact of 3D printing on the ability to quickly prototype parts is hard to underestimate. If I were working 20 years ago and wanted to prototype this part, I'm not sure what I would do - I would have to machine it. 
+The bigest limit to 3d printing today is materials - it's still mostly limited to plastics, unless you have a lot of $$. There are environmental consequences to this as well - wood, clay, other materials that are (often) more ecofriendly don't lend themselves to printing. I think the next breakthrough in rapid prototyping will be in materials. 
+
 # Report 3 - week of 9/11/2023
 ## Reflections
 I’ve finally gotten the hang of Rhino and grasshopper. I started going through video tutorials on Rhino.com, but I found that for things like this I learn much better with written tutorial where it’s easy for me to skip over parts I already know, and where I don’t constantly have to pause the video and rewind and say “where exactly on the screen did they click to bring up that tool?” The downside of written tutorials is, of course, that there are fewer of them (it’s much easier to record a video of you doing something than it is for you to write it up in a detailed document with images and instructions).
