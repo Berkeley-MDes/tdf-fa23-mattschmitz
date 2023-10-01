@@ -32,7 +32,9 @@ Finally got my project 1 done! I was very proud of 3d printing something for the
 My first print attempt was uncessessful, because the extruder for the breakaway was clogged. I dediced to reprint using the same print head for the part and the breakaway. You'll notice in the above photo that I oriented the part with the arch inverted - The reason for this was because I wasn't sure how precise the printer was at a normal speed/resolution setting, and I knew that the arch portion of my print needed to be pretty precise to fit onto the bar of the u-lock. So I opted for a less efficient print shape in order to ensure a good surface finish where it counted. However, it seems that the printer is more accurate than I anticipated, and this wasn't necessary - even going at a normal speed (not fine) I was impressed with the print quality. 
 
 Here is the part in use on my scooter:
+
 <img width="400" alt="image" src="https://github.com/Berkeley-MDes/tdf-fa23-mattschmitz/assets/23087383/cf1d9745-6548-4579-b450-e32337faa125">
+
 <img width="400" alt="image" src="https://github.com/Berkeley-MDes/tdf-fa23-mattschmitz/assets/23087383/926df596-3af5-45ab-b72b-6ce4fb767fa3">
 
 
