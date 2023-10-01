@@ -7,10 +7,12 @@ I love that we're working with our photon2. The photon2 is a unique microcontrol
 The project I want to work on with my photon2 is creating a robot wire bender. Kind of like the DIWire, but I had the idea to make one that could do more sculptural work, using wedges to bend the wire instead of articulated sharp angles.
 
 In 2d, it could simply bend wire in a circle:
-<img width="570" alt="image" src="https://github.com/Berkeley-MDes/tdf-fa23-mattschmitz/assets/23087383/c63d8ace-9e3a-4ce0-ac6f-073a444b33dc">
+
+<img width="500" alt="image" src="https://github.com/Berkeley-MDes/tdf-fa23-mattschmitz/assets/23087383/c63d8ace-9e3a-4ce0-ac6f-073a444b33dc">
 
 But with a second wedge, you could created really interesting sculptural spirals:
-<img width="580" alt="image" src="https://github.com/Berkeley-MDes/tdf-fa23-mattschmitz/assets/23087383/43657982-70af-4500-b157-84f6e190e164">
+
+<img width="500" alt="image" src="https://github.com/Berkeley-MDes/tdf-fa23-mattschmitz/assets/23087383/43657982-70af-4500-b157-84f6e190e164">
 
 We will see if anyone has an interest in working on this idea with me
 
