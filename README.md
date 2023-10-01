@@ -1,4 +1,25 @@
-# Report 4 - week of 9/21/2023
+# Report 5 - week ending 9/28/2023
+
+## Reflections
+
+I love that we're working with our photon2. The photon2 is a unique microcontroller becuase it requires wifi connectivity to function. I knew this in theory, but could not for the longest time figure out why I could not get it to work at home - until I realized that I set it up to work on Berkeley's IOT wifi - not on my home wifi. This is honestly kind of annoying and strikes me as a design flaw, but, like many "obvious" design flaws, there are probably some good reasons it was made this way, or at leats it probably wasn't as simple as "they didn't think about it". The software, IDE and community seems to be pretty solid. I got vs-code set up, which is exciting as I used to do a lot of coding (I was a software engineer at Stripe for almost 4 years) and so I'm excited to get back into that. But it also reminded me of a) some of the things that I most hate about coding - namely that you can sink hours into unintellible error messages and breakages with sometimes no clear path to resolution other than googling & searching on stack overflow (or now, asking chatGPT), and b) how much setup is involved in having a productive coding environment. All the little hacks and shortcuts (bash profiles, shell scripts, ssh shortcuts, extensions etc) that I relied on to be an efficient programmer all have to be re-set up. Little tools like nodemon I used to use often I've forgotten how to use.
+
+The project I want to work on with my photon2 is creating a robot wire bender. Kind of like the DIWire, but I had the idea to make one that could do more sculptural work, using wedges to bend the wire instead of articulated sharp angles.
+
+In 2d, it could simply bend wire in a circle:
+
+
+But with a second wedge, you could created really interesting sculptural spirals:
+
+
+We will see if anyone has an interest in working on this idea with me
+
+## Speculations
+
+One thing I am really excited to try is coding with chatGPT and github co-pilot. I just got access to github copilot. When I was at Stripe, neither of these existed (github copilot had been introduced, I think, but wasn't common yet). I think that these tools are really going to make coding and software more accessible to the vast majority of folks. This is unique in many ways to the software domain, because software is ALL COMPUTER READIBLE. Think about that for a moment- what other profession could almost the entire body of work be computer readible? Mechanical engineering certainly isn't. Design isn't. I can ask chatGPT about mechanics and it will have read a couple thousand mechanical engineering textboks or papers, but it can't physically work in a shop and look at materials or feel what it is to press on a haptic system. I understand that software interacts with hardware so for some cases like working with embedded systems it gets more complicated - but for the vast majority of cases, everything that is coded can be read by a computer. This is a huge advantage in terms of training the technlogy.
+
+
+# Report 4 - week of 9/18/2023
 
 ## Reflections
 
@@ -76,7 +97,7 @@ I also wish I understood better why rhino is so popular with architects. Does it
 Working on this project has also made me realize how much time and effort go into the simplest of products. It would take me weeks to get my bike lock holder to the same polish of finish as the one kryptonite sells.
 
 
-# Report 2 - Week of 09/04/2023 #
+# Report 2 - Week of 09/04/2023
 ## Reflections
 I've made some progress getting my feet under me. Have a better grasp of grashopper as an interface; it seems like it's really a visual programming tool, sort of like and old school turing machine. Having worked as a software engineer for a while this makes sense to me (thought it's a little frustrating, as I really want it to have the full capabilities of a programming interface - for example, the ability to set environment variables would be incredibly helpful. I've heard that you can write python scripts to interopt with grashopper so perhaps that will be a challenge for next week.
 
