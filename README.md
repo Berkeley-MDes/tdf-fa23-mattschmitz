@@ -2,9 +2,20 @@
 ## Reflections
 Suprisingly, 5 people were interested in working on a sculptural wire bender with me. Unfortunately, I must not have done a good job explaining in writing what I had in mind, because when I explained in person most people responded with "oh, that's not what I had in mind". I think folks had thought I meant simply to creating an interactive art installation. After much discussion and deliberation we've split into 2 teams of 3 though and are moving forward. We are doing something halfway exhibition halfway tool.
 
-I figured a first step was to understand existing tool in this space. We have a DIWire in Berkeley's Makerspace, so I've been working to get that up and running. First it required making a power cord (thank you Gary) since the old one was lost. Then I've been trying to understand how the software works.
+I figured a first step was to understand existing tool in this space. We have a DIWire in Berkeley's Makerspace, so I've been working to get that up and running. First it required making a power cord (thank you Gary) since the old one was lost. Then I learned that the software is not free or open source, so we needed to find the machine with it instealled. After getting all that (and working through a few other kinks) I finally had my first bend!
 
 
+Then I've been trying to understand how the software works. Unfortunately, it doesn't just create and send a G-Code file, which would be super nice. Instead, it sends data via a usb (acting as a serial port) to the machine. You unplug the USB cable mid way, and the machine stops working.
+
+The code for "wireware" isn't open source, so I couldn't find what it's doing under the hood. I did find this 11 yo repo: https://github.com/diwire/DIWire-Bender and this 6yo repo which give some hints: https://github.com/FoxDotBuild/DIWirebender.
+
+I ended up installing a software based usb sniffer (never heard of such a thing) that could listen to the USB port. Indeed, I was able to see bits of G-Code being sent to the machine, and some data being sent back! 
+
+My next step is to see if I can control the machine directly by sending G-code from a python script or similar. Unfortunately the python installation on my laptop is royally screwed up (from using pyenv several years ago and then overriding it while following instructions for a circuits course I'm taking).. so first step will be to fix that.
+
+
+## Speculations
+I may have mentioned this before, but I don't know if the "every man(person) a maker" movement is really a plausible future. I think the flaw with this thinking is that the easier things get to make, the more complex we expect things to be. It is now fairly easy for anyone (particularly with the help of ChatGPT) to create a simple program that would have blown peoples minds in the 1960's. But instead of a world where everyone programs, we have a world where, while programming is much more common, what we expect from programs is much more - we expect seamless and sophisticated software. I think there is a similar analogy with phyiscal making - 3d printers have make it easier for people to prototype, but instead of everyone having a 3d printer in their home, the quality and speed of development of phyiscal goods has just increased - For example, drones technology is advancing very quickly in part because it's super easy not to quickly prototype new parts for them. So our expectation of what a drone we buy can do relative to just a few years ago has increased.
 
 # Report 5 - week ending 9/28/2023
 
