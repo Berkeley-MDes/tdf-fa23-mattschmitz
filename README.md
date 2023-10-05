@@ -2,8 +2,15 @@
 ## Reflections
 Suprisingly, 5 people were interested in working on a sculptural wire bender with me. Unfortunately, I must not have done a good job explaining in writing what I had in mind, because when I explained in person most people responded with "oh, that's not what I had in mind". I think folks had thought I meant simply to creating an interactive art installation. After much discussion and deliberation we've split into 2 teams of 3 though and are moving forward. We are doing something halfway exhibition halfway tool.
 
-I figured a first step was to understand existing tool in this space. We have a DIWire in Berkeley's Makerspace, so I've been working to get that up and running. First it required making a power cord (thank you Gary) since the old one was lost. Then I learned that the software is not free or open source, so we needed to find the machine with it instealled. After getting all that (and working through a few other kinks) I finally had my first bend!
+In this process I also had a number of other intersting ideas that I might want to work on at some point:
 
+- what about a cnc hammar that can indent thin sheet metal, to form faces etc?
+- From an installation perspective, I like the idea of ephemerality. Could you have a wire sculpture that when users get close, straightens instelf out, only reforming when they are a far aware? You could do this by physically bending/unbending wire, or, if it exists, you could use a material with some degree of memory - for example, perhaps when you heat up the wire, it looses it's bends, but when cooled remembers them. (googling and looks like this exists - called nitinol wire. You could controll the heat of the wire by running a current through it, or braiding it with a wire of some known resistance which you run a high current through in order to heat it. 
+- etch-e-sketch style yarn drawer - could you tie a piece of yarn to a round magnet, mount it to a board with lots of small pegs, and then with a 2d drive system on the back of the board, trace a shape with the yarn (think like the game snake).
+- Similar idea of ephemorality with the above concept - it would be cool to have a work of art (say made from yarn on a peg board, or embrodery needle through a thick cloth) that unravells given some trigger (users leaving the art work, for example) or visa versa. I like the idea of a sweater unraveling when you pull a single loose thread. 
+
+
+I figured a first step was to understand existing tool in this space. We have a DIWire in Berkeley's Makerspace, so I've been working to get that up and running. First it required making a power cord (thank you Gary) since the old one was lost. Then I learned that the software is not free or open source, so we needed to find the machine with it instealled. After getting all that (and working through a few other kinks) I finally had my first bend!
 
 Then I've been trying to understand how the software works. Unfortunately, it doesn't just create and send a G-Code file, which would be super nice. Instead, it sends data via a usb (acting as a serial port) to the machine. You unplug the USB cable mid way, and the machine stops working.
 
