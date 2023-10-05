@@ -9,8 +9,9 @@ In this process I also had a number of other intersting ideas that I might want 
 - etch-e-sketch style yarn drawer - could you tie a piece of yarn to a round magnet, mount it to a board with lots of small pegs, and then with a 2d drive system on the back of the board, trace a shape with the yarn (think like the game snake).
 - Similar idea of ephemorality with the above concept - it would be cool to have a work of art (say made from yarn on a peg board, or embrodery needle through a thick cloth) that unravells given some trigger (users leaving the art work, for example) or visa versa. I like the idea of a sweater unraveling when you pull a single loose thread. 
 
+Back to the wire bender - I figured a first step was to understand existing tool in this space. We have a DIWire in Berkeley's Makerspace, so I've been working to get that up and running. First it required making a power cord (thank you Gary) since the old one was lost. Then I learned that the software is not free or open source, so we needed to find the machine with it instealled. After getting all that (and working through a few other kinks) I finally had my first bend!
 
-I figured a first step was to understand existing tool in this space. We have a DIWire in Berkeley's Makerspace, so I've been working to get that up and running. First it required making a power cord (thank you Gary) since the old one was lost. Then I learned that the software is not free or open source, so we needed to find the machine with it instealled. After getting all that (and working through a few other kinks) I finally had my first bend!
+https://github.com/Berkeley-MDes/tdf-fa23-mattschmitz/assets/23087383/6a0b2bd7-16f6-4441-8590-1c8e4634d028
 
 Then I've been trying to understand how the software works. Unfortunately, it doesn't just create and send a G-Code file, which would be super nice. Instead, it sends data via a usb (acting as a serial port) to the machine. You unplug the USB cable mid way, and the machine stops working.
 
