@@ -11,6 +11,11 @@ The code for "wireware" isn't open source, so I couldn't find what it's doing un
 
 I ended up installing a software based usb sniffer (never heard of such a thing) that could listen to the USB port. Indeed, I was able to see bits of G-Code being sent to the machine, and some data being sent back! 
 
+Sniffer (left) and "Wireware" (right):
+
+<img width="500" alt="image" src="https://github.com/Berkeley-MDes/tdf-fa23-mattschmitz/assets/23087383/5a313775-9dd3-49e7-8d44-0da618f25a83">
+
+
 My next step is to see if I can control the machine directly by sending G-code from a python script or similar. Unfortunately the python installation on my laptop is royally screwed up (from using pyenv several years ago and then overriding it while following instructions for a circuits course I'm taking).. so first step will be to fix that.
 
 
