@@ -1,3 +1,18 @@
+
+# Report 7 - week ending 10/12/2023
+
+## Reflections
+
+This was the first week of actually working on our team project. It has been maddenningly slow. After splitting into our separate project groups there has been more coordination & meetings and documenting and overhead and now we have a slack channel and a figma and a google doc and calendar invites... which is all good, but for a 2 week project, it feels like we've put in a lot of time without a ton of time on the hardest part of this project- the actual engineering/circuitry/code. Another unfortunate challenge has been that our first order of parts - including a wire bender we wanted to test out - was lost. So we've ordered another, but that has set us back a bit. I also think that it's been challenging doing synchronous work - this has been a hard project ot split into different subsections given peoples different strengths. We are making progress though. We got the small servo motor wired and working - and learned how to install external libraries with particle and the particle workbench. We tested out using a chisel as a "wedge" and using the DIWIRE with 1/16th inch steel wire and were able to get some interesting spirals. 
+
+<img width="566" alt="image" src="https://github.com/Berkeley-MDes/tdf-fa23-mattschmitz/assets/23087383/e1b316cf-2f26-4e69-93a6-8831fbcaab69">
+
+We've landed on a very basic design for our prototype, and have bought the materials needed to begin fabricating. My biggest fear is that the wire feed mechanism we've bought will not be sufficient to drive the wire forward and we will need to build that from scratch. This is not a hard problem to solve but given the time constraints and the team background it may be infeasible. There are also so many things I would love to do that we haven't touched on - webhooks and more IOT type applications. so it goes.
+
+## Speculations
+Working asynchronously on hardware projects is hard, I wonder if there are better tools or best practices out there to help with this. I'm also super bummed I wasn't allowed to take a mechatronics design class (ME department told me no grad students were allowed in the class) - I would have really enjoyed it and it would have been very relevant to this project. I also think, like with many robotic applications, that the work is more and more about what the software can do - can the software effectively map the behavior of physical materials to output? Perhaps there is a role for ML in this - I've often thought that with some machining problems, if you had enough funding, you could just brute force solutions to control problems - i.e. have a robot bend wire in hundreds of different ways, measure the resulting wire shape, and then map that back to the robot - instead of trying to deterministically map input and output. That's a bad example but I'll think of another one.
+
+
 # Report 6 - week ending 10/5/2023
 ## Reflections
 Suprisingly, 5 people were interested in working on a sculptural wire bender with me. Unfortunately, I must not have done a good job explaining in writing what I had in mind, because when I explained in person most people responded with "oh, that's not what I had in mind". I think folks had thought I meant simply to creating an interactive art installation. After much discussion and deliberation we've split into 2 teams of 3 though and are moving forward. We are doing something halfway exhibition halfway tool.
