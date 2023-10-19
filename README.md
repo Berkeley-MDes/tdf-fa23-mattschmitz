@@ -127,7 +127,7 @@ void copyStringMinusFirst(char *input, char *output) {
 
 ```
 
-wiring setup with transistor, featherwing, indicator LED, diode for back-current protection: 
+wiring setup with transistor, featherwing, indicator LED, diode for back-current protection. brown and black wires run to the DC motor: 
 
 <img width="460" alt="image" src="https://github.com/Berkeley-MDes/tdf-fa23-mattschmitz/assets/23087383/16ab5a35-7944-428a-90b5-d7b2b72f8a92">
 
