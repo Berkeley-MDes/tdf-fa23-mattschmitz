@@ -1,3 +1,143 @@
+# Report 8 - week ending 10/19/2023
+
+## Reflections
+This week was a hurculean effort to get all the different components of the wire bender project working together, but there were a lot of moments of triumph. The first triumph was soldering up a featherwing for servo motor control and getting the correct code to control the servo motor. Soldering the featherwing was tedious but I now feel confident in soldering which is great - thanks to Sudhu showing me a few tricks. I had always struggled to solde previously and did not realize that it was due in a large part to using soldering irons with bad tips - if you're using a communal soldering iron that hasn't been well maintained then you may need to do a lot of scrapping and tinning to get it to a usable state again. Figuring out the right code to run on the featherwing was also a bit tedious - it turns out the adafruit has it's own library for the featherwings that controls the servo, and finding example code can be a bit tedious because you need to find wiring (not circuit python) code and in some cases code specific to particle (not arduino). The ecosystem for arduino is just much more developed than for particle. I also learned that servos use PWM to control their movement, but not in the same way that pwm is traditionally used (to mimic an analog signal). 
+
+It also turns out that different servos respond differently to different pulse widths, and those pulse widths are not entirely defined by the datasheet - there's a lot of real world variation. 
+
+The second big win for me was powering a DC motor via a transistor. The DC motor we had is a 24V motor from a mig welder (powering the wire feed mechanism). I used a mosfet to control this which is the first time I've ever done something like this. 
+
+There were other small challenges that were rewarding to get past - figuring out how to get input from the serial monitor (to test with) was remarkably challenging - I'm not used to working with such a low level library as C++ where little things like splittin an array sometimes require you writing your own helper function. I've also run into some issues with types and pointers that reminds me of the few CS classes I took many years ago (and have mostly forgotten). 
+
+Here's the full code for the particle powering the the motor and servo. 
+
+```
+#if defined (PARTICLE)
+#include "Adafruit_PWMServoDriver.h"
+#else
+#include <Wire.h>
+#include <Adafruit_PWMServoDriver.h>
+#endif
+
+Adafruit_PWMServoDriver pwm = Adafruit_PWMServoDriver(); // called this way, it uses the default address 0x40
+#define SERVOMIN  80 // this is the 'minimum' pulse length count (out of 4096)
+#define SERVOMAX  590 // this is the 'maximum' pulse length count (out of 4096)
+uint8_t servonum = 0; // our servo # counter
+
+// Serial input variables
+int intReceived; // integer input from serial monitor
+char serInString[50];  // array that will hold the different bytes of the string.
+char command; // command from serial monitor
+char commandEnd[50];
+
+int publishedDistInt; // distance to move servo - from publisher (pulse width)
+
+
+void setup() {
+  Serial.begin(9600);
+  Serial.println("starting up");
+  pinMode(D15, OUTPUT);
+  pwm.begin();  
+  pwm.setPWMFreq(60);  // Analog servos run at ~60 Hz updates
+
+  setFeeder(0); // turn wire feeder off (0  = off, 255 = full power (max))
+  // servo goes from 80 - 590
+  moveServo(SERVOMIN); // move servo to start position
+
+  Particle.subscribe("distance", moveServoSubscribe);
+}
+
+
+void loop () {
+  memset(serInString, 0, 50);  // clear the string
+
+  //read the serial port and create a string out of what you read
+  readSerialString(serInString);
+  command = serInString[0];
+
+  if( command == 's' || command == 'f') {
+    // Serial.println("command recieved: " + String(command));
+    copyStringMinusFirst(serInString, commandEnd);
+    // Serial.println("second half is: " + String(commandEnd));
+    intReceived = atoi(&commandEnd[0]);
+    // Serial.println("converted to in: " + String(intReceived));
+
+    if(command == 's'){ // command for servo
+      Serial.println("servo command recieved, setting PWM to: " + String(intReceived));
+      moveServo(intReceived);
+      // set servo to value entered
+    }
+    else if(command == 'f') {
+      Serial.println("feeder command recieved: " + String(intReceived));
+      setFeeder(intReceived);
+    }
+  	serInString[0] = 0; // indicates we've used this string - maybe not needed anymore
+  } else {
+    // Serial.println("unrecognized command recieved: " + command);
+  }
+
+  delay(100);  // wait a bit, for serial data
+}
+
+void moveServo(int distance) {
+  Serial.println("moving servo to: " + String(distance));
+  pwm.setPWM(servonum, 0, distance);
+}
+
+void setFeeder(int power){
+  if (power < 256) {
+    Serial.println("setting feeder to: " + String(power));
+    analogWrite(D15, power);
+  } else {
+    Serial.println("invalid feeder power: " + String(power));
+  }
+}
+
+// used to map published input to servo distance
+void moveServoSubscribe(const char *event, const char *publishedDist) {
+  Serial.println("mapping servo");
+  Serial.println("event: " + String(event));
+  Serial.println("publishedDist: " + String(publishedDist));
+  publishedDistInt = atoi(publishedDist);
+  moveServo(publishedDistInt);
+  Serial.println("done moveServoSubscribe");
+}
+
+//read a string from the serial and store it in an array
+//you must supply the array variable
+void readSerialString (char *strArray) {
+  int i = 0;
+  if(!Serial.available()) {
+    return;
+  }
+  while (Serial.available()) {
+    strArray[i] = Serial.read();
+    i++;
+  }
+}
+
+void copyStringMinusFirst(char *input, char *output) {
+  int i = 0;
+  while(input[i] != '\0') {
+    output[i] = input[i+1];
+    i++;
+  }
+  output[i] = '\0';
+}
+
+```
+
+wiring setup with transistor, featherwing, indicator LED, diode for back-current protection: 
+
+<img width="460" alt="image" src="https://github.com/Berkeley-MDes/tdf-fa23-mattschmitz/assets/23087383/16ab5a35-7944-428a-90b5-d7b2b72f8a92">
+
+
+
+## Speculations
+I've been thinking a lot about 2 things this week. One is the challenge of parallelizing work on a team. I would ultimately like to run my own business and I know that in order to be successful I will need to be effective and delegating and organizing a tea. This week was a challenge because our system is tightly integrated - figuring out how to split up work was not easy. I think had I been more assertive early on and putting time into dividing up responsibilities that would have been helpful.
+
+The other thing I've been thinkin about is ecosystems. Particle is slightly more challenging to work with than Arduino because it doensn't have as developed an ecosystem. At what point should you adopt a new technology? How much do you trust yourself to read the tea-leaves and know which particular variation of a product (in this case, microcontrollers) will catch on and which will stagnate? I know from experience (stripe built much of it's platform in ruby, a language which has since fallen out of favor, and later decided to migrate largely to Java mainly for the ecosystem benefits, a process still underway) that working with a technolgoy that doens't have a well developed or growing ecosystem is very challenging.
+
 
 # Report 7 - week ending 10/12/2023
 
