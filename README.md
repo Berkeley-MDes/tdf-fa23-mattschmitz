@@ -3,8 +3,13 @@
 ## Reflections
 We got a bit of a rest from two projects due last week, and kicked off Monday talking about LLMs and Zerowidth, a no-code (or code-optional) interface for working with LLMs. Among other things, it provides a stardardized wrapper for you to provide GPT4 with initial instructions customizing the context of the bot (i.e. "you are a reincarnation of doctor suess, designed to help people rhyme", and a means to hook up the bot to a particular dataset that GPT4 may not have already been trained on (for example, all the poems I matthew have written). It has it's limitations - the biggest being that you are not actually retraining the model, so you are subject to the token limitations of GPT4's api (something like 8k tokens max). So I can't use it to create a chatbot that's been trained on all of my writings because that exceeds 8k tokens. But I can allow it to look up at any time and incorporate a particular peice of writing I may have written. I'm still playing around with it, but I like the interface.
 
+Playing around in zero width's workbench:
+
+<img width="1071" alt="image" src="https://github.com/Berkeley-MDes/tdf-fa23-mattschmitz/assets/23087383/a02adc92-d8d5-4b67-82d5-e0adda836bbc">
+
+
 ## Speculations:
-I think we will see more and more tools like this come up. Could you use a language model to train a language model? If so, you could have non-software engineers building really specific & sophisticated products. Exciting!
+I think we will see more and more tools like this come up. Could you use a language model to train a language model? If so, you could have non-software engineers building really specific & sophisticated products. I do think that as a business proposition there is a risk with a lot of this stuff that if anything becomes too successful OpenAI may just replicate its functionality. For example, there is a company called Boomerang that created a plugin for gmail that allows you to 'snooze' emails until later, and schedule sent. Gmail has since built both of those products into it's app, so I stopped using Boomerang and I imagine many others did as well. This may not happen if we truly get many large competing LLMS, but it remains to be seen whether that will happen or whether this technology will go the way of search engines where basically one player controls 90% market share. As it stands Anthropic and Google have not managed to produce anything quite as good as ChatGPT, and no one wants to use the second best LLM...
 
 # Report 8 - week ending 10/19/2023
 
