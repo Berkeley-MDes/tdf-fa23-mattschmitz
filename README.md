@@ -1,3 +1,11 @@
+# Report 9 - week ending 10/26/2023
+
+## Reflections
+We got a bit of a rest from two projects due last week, and kicked off Monday talking about LLMs and Zerowidth, a no-code (or code-optional) interface for working with LLMs. Among other things, it provides a stardardized wrapper for you to provide GPT4 with initial instructions customizing the context of the bot (i.e. "you are a reincarnation of doctor suess, designed to help people rhyme", and a means to hook up the bot to a particular dataset that GPT4 may not have already been trained on (for example, all the poems I matthew have written). It has it's limitations - the biggest being that you are not actually retraining the model, so you are subject to the token limitations of GPT4's api (something like 8k tokens max). So I can't use it to create a chatbot that's been trained on all of my writings because that exceeds 8k tokens. But I can allow it to look up at any time and incorporate a particular peice of writing I may have written. I'm still playing around with it, but I like the interface.
+
+## Speculations:
+I think we will see more and more tools like this come up. Could you use a language model to train a language model? If so, you could have non-software engineers building really specific & sophisticated products. Exciting!
+
 # Report 8 - week ending 10/19/2023
 
 ## Reflections
