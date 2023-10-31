@@ -1,3 +1,16 @@
+# Report 10 - week ending 11/2/2023
+
+## Reflections
+
+### Zerowidth
+The goal of this project was to create a "mini-me" chatbot using Zerowidth's API. 
+I first created an instruction set
+
+<img width="764" alt="image" src="https://github.com/Berkeley-MDes/tdf-fa23-mattschmitz/assets/23087383/8ffe6bac-4b82-46bf-b210-30ad5e1018f3">
+
+
+
+
 # Report 9 - week ending 10/26/2023
 
 ## Reflections
