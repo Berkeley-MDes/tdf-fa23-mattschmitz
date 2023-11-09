@@ -1,15 +1,36 @@
-# Report 10 - week ending 11/2/2023
+# Report 11 - week ending 11/9/2023
 
 ## Reflections
 
-### Zerowidth
-The goal of this project was to create a "mini-me" chatbot using Zerowidth's API. 
-I first created an instruction set
+This week I worked on my writeup for the Zerowidth project, and have started brainstorming about my final project.
+I have a couple of ideas I'm interested in persuing, not limited to
+
+- A cnc feedback device that sits on a spindle and listens for chattering, adjusting feeds & speeds to try and avoid bad harmonics (spoke with Shopbot CEO about this yesterday - he's always wanted to do this)
+- A true robotic wire sculptor (taking project 2 and augmenting it - particularly focusing on the software side)
+- Something to help remove hardware from textiles for recycling (using magnets perhaps??)
+
+Need to do a little more research on what's out there already
+
+## Speculations
+I wonder if AI will get to the point where it can propose design solutions to these problems. We belittle if often as "just an autocomplete" but in some ways so are humans; we two resynthesise our past experience to generate novel ideas. Our brains are remarkable computational engines and LLMs are a long way from being as flexible as them, but at the end of the day they are still computers.
+
+# Report 10 - week ending 11/2/2023
+
+## Reflections
+I created a "mini-me" chatbot using Zerowidth's API. 
+I first created an intelligence with some basic instructions
 
 <img width="764" alt="image" src="https://github.com/Berkeley-MDes/tdf-fa23-mattschmitz/assets/23087383/8ffe6bac-4b82-46bf-b210-30ad5e1018f3">
 
+then augmented it with my weekly reports.
 
+<img width="556" alt="image" src="https://github.com/Berkeley-MDes/tdf-fa23-mattschmitz/assets/23087383/4c1a96cd-c6c2-439c-bfc8-8192a62bc76e">
 
+I tweaked various parameters and gave it some more input, and am pretty happy with the resulting chatbot
+<img width="546" alt="image" src="https://github.com/Berkeley-MDes/tdf-fa23-mattschmitz/assets/23087383/9d8dd2f8-fa69-4ca1-b79f-1843a6ab946e">
+
+## Speculations
+While I like the project, I found the token limitations to be severe. Here we have a 500GB model that has been trained on absolutely massive text datasets, and it balks at us adding a few kb more of data? It seems there should be an easy way to "retrain" a LLM on a specific dataset without needing to pass all of that data in an API call. Hopefully soon.
 
 # Report 9 - week ending 10/26/2023
 
